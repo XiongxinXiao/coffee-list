@@ -1,3 +1,26 @@
-<p>
-  coffee works!
-</p>
+<div app-table>
+  <ng-template #title>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">blend_name</th>
+      <th scope="col">origin</th>
+      <th scope="col">variety</th>
+      <th scope="col">notes</th>
+      <th scope="col">intensifier</th>
+    </tr>
+  </ng-template>
+  <ng-template #body>
+    <tr *ngFor="let coffee of coffeeList">
+      <th scope="row">{{ coffee.id }}</th>
+      <td>{{ coffee.blend_name }}</td>
+      <td>{{ coffee.origin }}</td>
+      <td>{{ coffee.variety }}</td>
+      <td>{{ coffee.notes }}</td>
+      <td>{{ coffee.intensifier }}</td>
+    </tr>
+  </ng-template>
+  <ng-template #pagination>
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
+    </ngb-pagination>
+  </ng-template>
+</div>

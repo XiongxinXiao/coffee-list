@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1715,
+    "uid": "65b6a310-fdeb-457a-870e-a82baea6d6b6",
+    "blend_name": "Pumpkin-spice Symphony",
+    "origin": "Mattari, Yemen",
+    "variety": "Geisha",
+    "notes": "wild, silky, green pepper, lychee, cantaloupe",
+    "intensifier": "astringent"
+  },
+  {
+    "id": 6812,
+    "uid": "48f854a4-471c-4a04-9ec4-f2b3f44102cb",
+    "blend_name": "Major Forrester",
+    "origin": "Lintong, Sumatra",
+    "variety": "SL34",
+    "notes": "sharp, watery, potato defect!, burnt sugar, cream",
+    "intensifier": "crisp"
+  },
+  {
+    "id": 8246,
+    "uid": "e6ff8a31-e3dc-42cd-bc42-61c69f29fd69",
+    "blend_name": "Good-morning Volcano",
+    "origin": "Lake Tawar, Sumatra",
+    "variety": "SL34",
+    "notes": "quick, full, maple syrup, orange, lemonade",
+    "intensifier": "faint"
+  },
+  {
+    "id": 4884,
+    "uid": "2ec6deb5-abac-468e-81ca-16f2a429c11d",
+    "blend_name": "Heart Utopia",
+    "origin": "Antigua, Guatemala",
+    "variety": "Java",
+    "notes": "unbalanced, velvety, honey, medicinal, cream",
+    "intensifier": "delicate"
+  },
+  {
+    "id": 2067,
+    "uid": "709943e4-9edb-4fca-9b2f-116c7e16148b",
+    "blend_name": "Reg's Cowboy",
+    "origin": "Nariño, Colombia",
+    "variety": "Sarchimor",
+    "notes": "dirty, coating, honeydew, papaya, hay",
+    "intensifier": "bright"
+  },
+  {
+    "id": 9376,
+    "uid": "3b53d0c9-9ba3-4c23-8848-d4f602c00c6a",
+    "blend_name": "Goodbye Been",
+    "origin": "Comayagua, Honduras",
+    "variety": "S288",
+    "notes": "bright, round, almond, golden raisin, rose hips",
+    "intensifier": "faint"
+  },
+  {
+    "id": 8080,
+    "uid": "4dcb45c8-40dc-459c-94d5-8d6d05f0fef0",
+    "blend_name": "Dark Coffee",
+    "origin": "Mogiana, Brazil",
+    "variety": "Dega",
+    "notes": "dry, big, pecan, leathery, mint",
+    "intensifier": "rounded"
+  },
+  {
+    "id": 6500,
+    "uid": "665e54b9-fdc2-4e3c-944a-8f30267fbce6",
+    "blend_name": "Wake-up Town",
+    "origin": "Gayo, Sumatra",
+    "variety": "Dega",
+    "notes": "faint, slick, cocoa powder, fresh wood, black-tea",
+    "intensifier": "dry"
+  },
+  {
+    "id": 4027,
+    "uid": "40ce04b8-8106-4047-9b9d-d73989201522",
+    "blend_name": "Pumpkin-spice Extract",
+    "origin": "Nayarit, Mexico",
+    "variety": "Yellow Bourbon",
+    "notes": "rounded, full, black cherry, lavender, dill",
+    "intensifier": "dense"
+  },
+  {
+    "id": 9314,
+    "uid": "af67e686-ddd7-4f58-b60a-a04e1aa74736",
+    "blend_name": "Pumpkin-spice Light",
+    "origin": "Nueva Segovia, Nicaragua",
+    "variety": "Kent",
+    "notes": "quick, creamy, bittersweet chocolate, graham cracker, ginger",
+    "intensifier": "dirty"
+  },
+  {
+    "id": 9364,
+    "uid": "86d75eb2-b48a-4be9-8002-9df70c5613ed",
+    "blend_name": "Blacktop America",
+    "origin": "Kayanza, Burundi",
+    "variety": "Dega",
+    "notes": "crisp, creamy, molasses, carbon, meyer lemon",
+    "intensifier": "unbalanced"
+  },
+  {
+    "id": 2284,
+    "uid": "e49f4d6e-be80-46ba-99be-0a09d88a90c3",
+    "blend_name": "Goodbye Look",
+    "origin": "San'ani, Yemen",
+    "variety": "Ethiopian Heirloom",
+    "notes": "sharp, slick, musty, white grape, leathery",
+    "intensifier": "balanced"
+  },
+  {
+    "id": 168,
+    "uid": "7ef56991-42f0-49ba-a570-c9617511563d",
+    "blend_name": "Huggy Nuts",
+    "origin": "Opalca, Honduras",
+    "variety": "Dilla",
+    "notes": "dense, slick, soil, magnolia, cacao nibs",
+    "intensifier": "astringent"
+  },
+  {
+    "id": 9350,
+    "uid": "f33403d0-4d3d-4dc4-a7a0-45df5b8b5850",
+    "blend_name": "Heart Choice",
+    "origin": "Tapanuli, Sumatra",
+    "variety": "Kaffa",
+    "notes": "crisp, creamy, dill, pecan, musty",
+    "intensifier": "lingering"
+  },
+  {
+    "id": 4132,
+    "uid": "7bffc021-f607-409e-a51d-4a87bc33358a",
+    "blend_name": "Green Blend",
+    "origin": "Kibale, Uganda",
+    "variety": "S288",
+    "notes": "juicy, syrupy, rose hips, ginger, raspberry",
+    "intensifier": "bright"
+  }
+]
