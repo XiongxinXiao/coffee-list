@@ -6,7 +6,10 @@ import { CoffeeComponent } from './coffee/coffee/coffee.component';
 const routes: Routes = [
   {
     path: '',
-    component: CoffeeComponent
+    component: CoffeeComponent,
+    resolve: {
+      coffee: CoffeesResolver
+    }
 },
 ];
 

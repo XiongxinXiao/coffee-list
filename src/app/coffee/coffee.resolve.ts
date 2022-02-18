@@ -9,31 +9,26 @@ import {areCoffeesLoaded} from './coffee.selector';
 
 
 @Injectable({providedIn: 'root'})
-export class CoffeesResolver implements Resolve<any> {
-
-    loading = false;
+export class CoffeesResolver implements Resolve<boolean> {
 
     constructor(private store: Store<AppState>) {
 
     }
 
     resolve(route: ActivatedRouteSnapshot,
-            state: RouterStateSnapshot): Observable<any> {
+            state: RouterStateSnapshot): Observable<boolean> {
 
         return this.store
             .pipe(
                 select(areCoffeesLoaded),
                 tap(coffeesLoaded => {
-                    if (!this.loading && !coffeesLoaded) {
-                        this.loading = true;
+                    if (!coffeesLoaded) {
                         this.store.dispatch(loadAllCoffees());
                     }
                 }),
                 filter(coffeesLoaded => coffeesLoaded),
-                first(),
-                finalize(() => this.loading = false)
+                first()
             );
-
     }
 
 }

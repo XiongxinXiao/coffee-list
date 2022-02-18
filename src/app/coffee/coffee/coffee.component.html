@@ -10,7 +10,7 @@
     </tr>
   </ng-template>
   <ng-template #body>
-    <tr *ngFor="let coffee of coffeeList">
+    <tr *ngFor="let coffee of coffeeList | async">
       <th scope="row">{{ coffee.id }}</th>
       <td>{{ coffee.blend_name }}</td>
       <td>{{ coffee.origin }}</td>

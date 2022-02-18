@@ -27,7 +27,7 @@ export const coffeeReducer = createReducer(
         (state, action) => adapter.setAll(
             action.coffees,
             {...state,
-                allCoursesLoaded:true
+                allCoffeesLoaded:true
             })),
 );
 

@@ -12,7 +12,6 @@ export class CoffeesEffects {
         () => this.actions$
             .pipe(
                 ofType(loadAllCoffees),
-                tap(() => console.log('yes')),
                 concatMap(action =>
                     this.coffeeService.findAllCoffees()),
                 map(coffees => allCoffeesLoaded({coffees}))
