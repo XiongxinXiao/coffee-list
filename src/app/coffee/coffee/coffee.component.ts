@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CoffeeHttpService } from '../coffee-http.service';
 import { Coffee } from '../coffee.model';
-import mockData from '../data.json';
-import {select, Store} from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import { AppState } from 'src/app/reducer';
-import { loadAllCoffees } from '../coffee.action';
-import { map, Observable, tap } from 'rxjs';
-import { selectAllCoffees } from '../coffee.selector';
+import { map, Observable } from 'rxjs';
+import { selectAllCoffees } from '../store/coffee.selector';
 @Component({
   selector: 'app-coffee',
   templateUrl: './coffee.component.html',
@@ -27,11 +24,11 @@ export class CoffeeComponent implements OnInit {
   refreshCountries() {
     this.coffeeList = this.store.pipe(
       select(selectAllCoffees),
-      map(coffees => {
+      map((coffees) => {
         return coffees.slice(
           (this.page - 1) * this.pageSize,
           (this.page - 1) * this.pageSize + this.pageSize
-        )
+        );
       })
     );
   }

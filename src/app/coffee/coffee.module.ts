@@ -6,10 +6,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TableComponent } from './table/table.component';
 import {EffectsModule} from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { Coffee } from './coffee.model';
-import { coffeeReducer } from './reducer';
-import { CoffeeHttpService } from './coffee-http.service';
-import { CoffeesEffects } from './coffee.effect';
+import { coffeeReducer } from './store';
+import { CoffeeHttpService } from './service/coffee-http.service';
+import { CoffeesEffects } from './store/coffee.effect';
 import { CoffeesResolver } from './coffee.resolve';
 
 @NgModule({
@@ -25,6 +24,7 @@ import { CoffeesResolver } from './coffee.resolve';
     TableComponent
   ],
   providers:[
+    CoffeeHttpService,
     CoffeesResolver
   ]
 })
