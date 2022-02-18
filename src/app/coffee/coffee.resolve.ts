@@ -5,7 +5,7 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AppState } from '../reducer';
+import { AppState } from '../store';
 import { select, Store } from '@ngrx/store';
 import { filter, first, tap } from 'rxjs/operators';
 import { loadAllCoffees } from './store/coffee.action';

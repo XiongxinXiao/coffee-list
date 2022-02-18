@@ -37,12 +37,9 @@
         <li class="list-group-item">{{ coffee.notes }}</li>
         <li class="list-group-item">{{ coffee.intensifier }}</li>
       </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Detail</a>
-      </div>
     </div>
   </div>
 
-  <ngb-pagination class="mt-4" [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
+  <ngb-pagination class="mt-4" [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCoffees()">
   </ngb-pagination>
 </div> 

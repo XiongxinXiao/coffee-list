@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoffeeModule } from './coffee/coffee.module';
 import {StoreModule} from '@ngrx/store';
-import {reducers} from './reducer';
+import {reducers} from './store';
 import { environment } from 'src/environments/environment';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {EffectsModule} from '@ngrx/effects';

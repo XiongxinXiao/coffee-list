@@ -1,10 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from '@ngrx/store';
-import { reducers } from 'src/app/reducer';
-import { CoffeeModule } from '../coffee.module';
 import { TestModule } from '../test.module';
 import { CoffeeComponent } from './coffee.component';
 

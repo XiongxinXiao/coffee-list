@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Coffee } from '../coffee.model';
 import { select, Store } from '@ngrx/store';
-import { AppState } from 'src/app/reducer';
+import { AppState } from 'src/app/store';
 import { map, Observable } from 'rxjs';
 import { selectAllCoffees } from '../store/coffee.selector';
 @Component({

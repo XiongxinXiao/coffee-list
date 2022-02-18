@@ -1,5 +1,5 @@
 import { provideMockStore } from '@ngrx/store/testing';
-import * as fromRoot from '../reducer';
+import * as fromRoot from '../store';
 import { NgModule } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
