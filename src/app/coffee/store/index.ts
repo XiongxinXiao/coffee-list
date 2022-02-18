@@ -9,12 +9,12 @@ export interface CoffeeState extends EntityState<Coffee> {
 
 export const adapter = createEntityAdapter<Coffee>({});
 
-export const initialCoursesState = adapter.getInitialState({
+export const initialCoffeesState = adapter.getInitialState({
   allCoffeesLoaded: false,
 });
 
 export const coffeeReducer = createReducer(
-  initialCoursesState,
+  initialCoffeesState,
 
   on(allCoffeesLoaded, (state, action) =>
     adapter.setAll(action.coffees, { ...state, allCoffeesLoaded: true })

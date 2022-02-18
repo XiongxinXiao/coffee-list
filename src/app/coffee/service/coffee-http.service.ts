@@ -8,6 +8,7 @@ export class CoffeeHttpService {
   constructor(private http: HttpClient) {}
 
   findAllCoffees(): Observable<Coffee[]> {
+    // hardcode for time saving, API URL should be moved to config file
     return this.http.get<Coffee[]>(
       'https://random-data-api.com/api/coffee/random_coffee?size=50'
     );

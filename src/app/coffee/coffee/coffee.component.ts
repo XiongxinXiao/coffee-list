@@ -18,10 +18,10 @@ export class CoffeeComponent implements OnInit {
   constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
-    this.refreshCountries();
+    this.refreshCoffees();
   }
 
-  refreshCountries() {
+  refreshCoffees() {
     this.coffeeList = this.store.pipe(
       select(selectAllCoffees),
       map((coffees) => {

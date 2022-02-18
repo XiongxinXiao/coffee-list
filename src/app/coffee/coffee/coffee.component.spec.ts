@@ -5,17 +5,14 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from 'src/app/reducer';
 import { CoffeeModule } from '../coffee.module';
+import { TestModule } from '../test.module';
 import { CoffeeComponent } from './coffee.component';
 
 describe('CoffeeComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule,
-        CoffeeModule,
-        StoreModule.forRoot(reducers),
-        EffectsModule.forRoot([]),
-        HttpClientModule
+        TestModule
       ],
       declarations: [
         CoffeeComponent
@@ -27,11 +24,5 @@ describe('CoffeeComponent', () => {
     const fixture = TestBed.createComponent(CoffeeComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it('should fetch the Coffee list from store', () => {
-    const fixture = TestBed.createComponent(CoffeeComponent);
-    const app = fixture.componentInstance;
-    app.coffeeList.subscribe(result => expect(result.length).toBeGreaterThan(0));
   });
 });
