@@ -4,12 +4,20 @@ import { CoffeeComponent } from './coffee/coffee.component';
 import { CoffeeRoutes } from './coffee.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TableComponent } from './table/table.component';
+import {EffectsModule} from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { Coffee } from './coffee.model';
+import { coffeeReducer } from './reducer';
+import { CoffeeHttpService } from './coffee-http.service';
+import { CoffeesEffects } from './coffee.effect';
 
 @NgModule({
   imports: [
     CommonModule,
     NgbModule,
-    CoffeeRoutes
+    CoffeeRoutes,
+    StoreModule.forFeature("coffee", coffeeReducer),
+    EffectsModule.forFeature([CoffeesEffects])
   ],
   declarations: [
     CoffeeComponent,

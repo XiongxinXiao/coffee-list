@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { CoffeeHttpService } from '../coffee-http.service';
 import { Coffee } from '../coffee.model';
 import mockData from '../data.json';
+import {select, Store} from '@ngrx/store';
+import { AppState } from 'src/app/reducer';
+import { loadAllCoffees } from '../coffee.action';
 @Component({
   selector: 'app-coffee',
   templateUrl: './coffee.component.html',
@@ -12,12 +16,13 @@ export class CoffeeComponent implements OnInit {
   pageSize = 10;
   collectionSize = 0;
 
-  constructor() {}
+  constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
     this.coffeeList = mockData;
     this.collectionSize = this.coffeeList.length;
     this.refreshCountries();
+    this.store.dispatch(loadAllCoffees())
   }
 
   refreshCountries() {
