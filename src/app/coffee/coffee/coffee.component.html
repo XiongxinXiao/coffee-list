@@ -1,26 +1,48 @@
-<div app-table>
-  <ng-template #title>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">blend_name</th>
-      <th scope="col">origin</th>
-      <th scope="col">variety</th>
-      <th scope="col">notes</th>
-      <th scope="col">intensifier</th>
-    </tr>
-  </ng-template>
-  <ng-template #body>
-    <tr *ngFor="let coffee of coffeeList | async">
-      <th scope="row">{{ coffee.id }}</th>
-      <td>{{ coffee.blend_name }}</td>
-      <td>{{ coffee.origin }}</td>
-      <td>{{ coffee.variety }}</td>
-      <td>{{ coffee.notes }}</td>
-      <td>{{ coffee.intensifier }}</td>
-    </tr>
-  </ng-template>
-  <ng-template #pagination>
-    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
-    </ngb-pagination>
-  </ng-template>
-</div>
+<div class="d-flex flex-column align-items-center">
+  <H1 class="my-4">Coffee List</H1> 
+  <div class="d-none d-sm-block">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Blend Name</th>
+          <th scope="col">Origin</th>
+          <th scope="col">Variety</th>
+          <th scope="col">Notes</th>
+          <th scope="col">Intensifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coffee of coffeeList | async">
+          <th scope="row">#{{ coffee.id }}</th>
+          <td>{{ coffee.blend_name }}</td>
+          <td>{{ coffee.origin }}</td>
+          <td>{{ coffee.variety }}</td>
+          <td>{{ coffee.notes }}</td>
+          <td>{{ coffee.intensifier }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="d-block d-sm-none d-flex flex-column align-items-center">
+    <div class="card my-2" style="width: 18rem;" *ngFor="let coffee of coffeeList | async">
+      <div class="card-body">
+        <h5 class="card-title">{{ coffee.blend_name }}</h5>
+        <p class="card-text">{{ coffee.id }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ coffee.origin }}</li>
+        <li class="list-group-item">{{ coffee.variety }}</li>
+        <li class="list-group-item">{{ coffee.notes }}</li>
+        <li class="list-group-item">{{ coffee.intensifier }}</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Detail</a>
+      </div>
+    </div>
+  </div>
+
+  <ngb-pagination class="mt-4" [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
+  </ngb-pagination>
+</div> 

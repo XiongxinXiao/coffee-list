@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { CoffeeComponent } from './coffee/coffee.component';
 import { CoffeeRoutes } from './coffee.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TableComponent } from './table/table.component';
 import {EffectsModule} from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { coffeeReducer } from './store';
@@ -20,8 +19,7 @@ import { CoffeesResolver } from './coffee.resolve';
     EffectsModule.forFeature([CoffeesEffects])
   ],
   declarations: [
-    CoffeeComponent,
-    TableComponent
+    CoffeeComponent
   ],
   providers:[
     CoffeeHttpService,
