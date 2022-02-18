@@ -10,6 +10,7 @@ import { Coffee } from './coffee.model';
 import { coffeeReducer } from './reducer';
 import { CoffeeHttpService } from './coffee-http.service';
 import { CoffeesEffects } from './coffee.effect';
+import { CoffeesResolver } from './coffee.resolve';
 
 @NgModule({
   imports: [
@@ -22,6 +23,9 @@ import { CoffeesEffects } from './coffee.effect';
   declarations: [
     CoffeeComponent,
     TableComponent
+  ],
+  providers:[
+    CoffeesResolver
   ]
 })
 export class CoffeeModule { }

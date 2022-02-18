@@ -8,7 +8,7 @@ import {loadAllCoffees} from './coffee.action';
 import {areCoffeesLoaded} from './coffee.selector';
 
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class CoffeesResolver implements Resolve<boolean> {
 
     constructor(private store: Store<AppState>) {

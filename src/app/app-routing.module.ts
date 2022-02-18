@@ -6,11 +6,12 @@ import { CoffeeComponent } from './coffee/coffee/coffee.component';
 const routes: Routes = [
   {
     path: '',
-    component: CoffeeComponent,
-    resolve: {
-      coffee: CoffeesResolver
-    }
-},
+    loadChildren: () => import('./coffee/coffee.module').then(m => m.CoffeeModule)
+  },
+  {
+    path: '**',
+    redirectTo: '/'
+  }
 ];
 
 @NgModule({
